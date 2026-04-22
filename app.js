@@ -1,6 +1,6 @@
 import { firebaseProject } from "./firebase-config.js";
 
-const STORAGE_KEY = "velora-dr-archive-state";
+const STORAGE_KEY = "cloudnova-dr-archive-state";
 const NAV_ITEMS = [
   { id: "overview", label: "Overview" },
   { id: "worldLore", label: "World Lore" },
@@ -1686,7 +1686,7 @@ function exportBackup() {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = "velora-backup.json";
+  anchor.download = "cloudnova-backup.json";
   anchor.click();
   URL.revokeObjectURL(url);
 }
@@ -1773,14 +1773,14 @@ async function setupFirebase() {
         if (!user) {
           throw new Error("No Firebase user is logged in.");
         }
-        await setDoc(doc(db, "veloraArchives", user.uid), nextState);
+        await setDoc(doc(db, "cloudnovaArchives", user.uid), nextState);
       },
       async loadState() {
         const user = auth.currentUser;
         if (!user) {
           return null;
         }
-        const snapshot = await getDoc(doc(db, "veloraArchives", user.uid));
+        const snapshot = await getDoc(doc(db, "cloudnovaArchives", user.uid));
         return snapshot.exists() ? snapshot.data() : null;
       }
     };
