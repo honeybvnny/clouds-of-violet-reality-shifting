@@ -1,15 +1,15 @@
 :root {
-  --bg: #140f1d;
-  --bg-soft: #1b1328;
-  --panel: rgba(29, 19, 42, 0.84);
-  --panel-strong: rgba(37, 24, 53, 0.94);
-  --panel-border: rgba(255, 230, 203, 0.12);
-  --text: #f7eee5;
-  --muted: #cab7cc;
-  --accent: #ffc57a;
-  --accent-2: #df8fb2;
-  --danger: #f58f8f;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+  --bg: #050505;
+  --bg-soft: #0d0714;
+  --panel: rgba(16, 11, 24, 0.88);
+  --panel-strong: rgba(22, 12, 34, 0.95);
+  --panel-border: rgba(184, 122, 255, 0.2);
+  --text: #ffffff;
+  --muted: #c7b8dd;
+  --accent: #a855f7;
+  --accent-2: #7c3aed;
+  --danger: #ff8ea3;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.52);
   --radius-xl: 28px;
   --radius-lg: 22px;
   --radius-md: 16px;
@@ -25,9 +25,9 @@ body {
   margin: 0;
   min-height: 100%;
   background:
-    radial-gradient(circle at top, rgba(223, 143, 178, 0.18), transparent 26%),
-    radial-gradient(circle at right, rgba(255, 197, 122, 0.14), transparent 22%),
-    linear-gradient(160deg, #100b17 0%, #1a1225 48%, #120d19 100%);
+    radial-gradient(circle at top, rgba(168, 85, 247, 0.2), transparent 26%),
+    radial-gradient(circle at right, rgba(124, 58, 237, 0.18), transparent 22%),
+    linear-gradient(160deg, #020202 0%, #0a0710 48%, #040406 100%);
   color: var(--text);
   font-family: "Manrope", sans-serif;
 }
@@ -73,13 +73,13 @@ img {
 
 .glass-panel,
 .hero {
-  background: linear-gradient(180deg, rgba(33, 22, 49, 0.92), rgba(24, 17, 36, 0.88));
+  background: linear-gradient(180deg, rgba(20, 12, 31, 0.95), rgba(8, 8, 12, 0.92));
 }
 
 .subtle-panel,
 .section-panel,
 .metric-card {
-  background: linear-gradient(180deg, rgba(40, 28, 57, 0.92), rgba(22, 16, 33, 0.92));
+  background: linear-gradient(180deg, rgba(18, 12, 28, 0.94), rgba(7, 7, 10, 0.94));
 }
 
 .sidebar {
@@ -133,7 +133,7 @@ img {
   align-items: center;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(255, 197, 122, 0.13);
+  background: rgba(168, 85, 247, 0.18);
   color: var(--accent);
 }
 
@@ -174,8 +174,8 @@ input,
 select,
 textarea {
   width: 100%;
-  border: 1px solid rgba(255, 232, 211, 0.12);
-  background: rgba(10, 7, 16, 0.34);
+  border: 1px solid rgba(184, 122, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text);
   border-radius: 14px;
   padding: 12px 14px;
@@ -198,17 +198,17 @@ textarea {
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, var(--accent), #ffd9a8);
-  color: #251729;
+  background: linear-gradient(135deg, var(--accent), #d8bd4fe);
+  color: #090909;
   font-weight: 700;
 }
 
 .ghost-btn,
 .file-btn,
 .icon-btn {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text);
-  border-color: rgba(255, 232, 211, 0.12);
+  border-color: rgba(184, 122, 255, 0.16);
 }
 
 .danger-btn {
@@ -256,8 +256,8 @@ textarea {
 
 .nav-btn.active {
   color: var(--text);
-  background: linear-gradient(135deg, rgba(255, 197, 122, 0.12), rgba(223, 143, 178, 0.12));
-  border-color: rgba(255, 197, 122, 0.18);
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(124, 58, 237, 0.14));
+  border-color: rgba(168, 85, 247, 0.24);
 }
 
 .main-panel {
@@ -283,7 +283,7 @@ textarea {
   inset: auto -40px -90px auto;
   width: 240px;
   height: 240px;
-  background: radial-gradient(circle, rgba(255, 197, 122, 0.22), transparent 70%);
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.26), transparent 70%);
   pointer-events: none;
 }
 
@@ -370,7 +370,7 @@ textarea {
 .data-point {
   display: grid;
   gap: 4px;
-  border-top: 1px solid rgba(255, 232, 211, 0.08);
+  border-top: 1px solid rgba(184, 122, 255, 0.1);
   padding-top: 10px;
 }
 
@@ -420,12 +420,12 @@ textarea {
   border: 0;
   padding: 0;
   border-radius: 28px;
-  background: linear-gradient(180deg, rgba(31, 21, 46, 0.98), rgba(18, 13, 27, 0.98));
+  background: linear-gradient(180deg, rgba(18, 12, 29, 0.98), rgba(5, 5, 8, 0.98));
   color: var(--text);
 }
 
 .editor-dialog::backdrop {
-  background: rgba(8, 5, 14, 0.78);
+  background: rgba(3, 3, 6, 0.82);
   backdrop-filter: blur(6px);
 }
 
@@ -456,8 +456,8 @@ textarea {
 .calendar-cell {
   min-height: 120px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 232, 211, 0.08);
-  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(184, 122, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
   padding: 12px;
   display: grid;
   align-content: start;
@@ -477,7 +477,7 @@ textarea {
   font-size: 0.82rem;
   padding: 6px 8px;
   border-radius: 10px;
-  background: rgba(255, 197, 122, 0.12);
+  background: rgba(168, 85, 247, 0.18);
 }
 
 .timeline-list {
@@ -488,14 +488,14 @@ textarea {
 .timeline-item {
   padding: 16px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 232, 211, 0.08);
+  border: 1px solid rgba(184, 122, 255, 0.1);
   background: rgba(255, 255, 255, 0.03);
 }
 
 .tree-member {
   padding: 16px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 232, 211, 0.08);
+  border: 1px solid rgba(184, 122, 255, 0.1);
   background: rgba(255, 255, 255, 0.03);
 }
 
@@ -516,9 +516,9 @@ textarea {
   min-height: 360px;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 232, 211, 0.08);
+  border: 1px solid rgba(184, 122, 255, 0.1);
   background:
-    linear-gradient(135deg, rgba(255, 197, 122, 0.12), rgba(223, 143, 178, 0.08)),
+    linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(124, 58, 237, 0.1)),
     rgba(255, 255, 255, 0.03);
 }
 
@@ -535,7 +535,7 @@ textarea {
   width: 18px;
   height: 18px;
   border-radius: 999px;
-  border: 2px solid rgba(20, 15, 29, 0.88);
+  border: 2px solid rgba(5, 5, 5, 0.92);
   background: var(--accent);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
 }
@@ -554,7 +554,7 @@ textarea {
 .map-sidebar,
 .insight-card {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 232, 211, 0.08);
+  border: 1px solid rgba(184, 122, 255, 0.1);
   background: rgba(255, 255, 255, 0.03);
   padding: 18px;
 }
@@ -572,13 +572,13 @@ textarea {
 }
 
 .memory-card {
-  border-left: 3px solid rgba(255, 197, 122, 0.35);
+  border-left: 3px solid rgba(168, 85, 247, 0.45);
 }
 
 .empty-state {
   padding: 18px;
   border-radius: 18px;
-  border: 1px dashed rgba(255, 232, 211, 0.16);
+  border: 1px dashed rgba(184, 122, 255, 0.22);
   text-align: center;
 }
 
