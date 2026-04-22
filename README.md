@@ -1,6 +1,6 @@
-# Novalis DR Archive
+# CloudNova DR Archive
 
-Novalis is a mobile-friendly installable web app for organizing desired realities, worlds, characters, timelines, lore, locations, diaries, wardrobes, school and career notes, finances, galleries, and memorials.
+CloudNova is a mobile-friendly installable web app for organizing desired realities, worlds, characters, timelines, lore, locations, diaries, wardrobes, school and career notes, finances, galleries, and memorials.
 
 ## Run locally
 
