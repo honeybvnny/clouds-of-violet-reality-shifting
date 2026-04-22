@@ -1,4 +1,4 @@
-const CACHE_NAME = "novalis-dr-archive-v1";
+const CACHE_NAME = "cloudnova-dr-archive-v1";
 const ASSETS = [
   "./",
   "./index.html",
